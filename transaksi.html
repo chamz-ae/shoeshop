@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - ShoeStore</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ShoeStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="user.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user.html#products">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user.html#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user.html#contact">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Transaksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="laporan.html">Laporan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5" id="transaksi">
+        <h2 class="text-center mb-4">Checkout Sepatu</h2>
+        <div class="card">
+            <div class="card-body">
+                <h5>Rincian Pesanan</h5>
+                <div id="checkoutItems"></div>
+                <div class="text-end mt-3">
+                    <h5>Total: Rp. <span id="checkoutTotal">0</span></h5>
+                </div>
+                <button class="btn btn-primary" id="confirmOrder">Konfirmasi Pesanan</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="config/transaksi.js"></script>
+</body>
+</html>

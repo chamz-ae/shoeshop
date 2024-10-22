@@ -1,0 +1,66 @@
+.product-card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    padding: 100px 0;
+}
+.about-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+.feature-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+.feature-icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.social-icons {
+    margin-top: 15px;
+}
+.social-icons a {
+    color: #0d6efd;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #0b5ed7;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 50px 0 20px;
+}

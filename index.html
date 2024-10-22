@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeStore - Toko Sepatu Online</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ShoeStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#products">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Kontak</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex gap-2">
+                        <a href="login.html" class="btn btn-outline-light">
+                            <i class="fas fa-user me-2"></i>Login
+                        </a>
+                        <a href="register.html" class="btn btn-light">
+                            Register
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-white">
+                    <h1 class="display-4 fw-bold">Temukan Sepatu Impianmu</h1>
+                    <p class="lead">Koleksi terbaru dengan kualitas terbaik untuk gaya hidupmu</p>
+                    <a href="#products" class="btn btn-light btn-lg">Belanja Sekarang</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="image/collection.png" alt="Shoes Collection" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container my-5" id="products">
+        <h2 class="text-center mb-4">Produk Kami</h2>
+        <div class="row" id="productList">
+            <!-- Products will be loaded here -->
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section" id="about">
+        <div class="container">
+            <h2 class="text-center mb-5">Tentang Kami</h2>
+            
+            <!-- Fitur-fitur -->
+            <div class="row mb-5">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <i class="fas fa-shoe-prints feature-icon"></i>
+                        <h4>Kualitas Terbaik</h4>
+                        <p>Kami menyediakan sepatu dengan kualitas premium dari brand terpercaya</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <i class="fas fa-truck feature-icon"></i>
+                        <h4>Pengiriman Cepat</h4>
+                        <p>Layanan pengiriman cepat ke seluruh Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <i class="fas fa-headset feature-icon"></i>
+                        <h4>Layanan 24/7</h4>
+                        <p>Tim customer service kami siap membantu Anda 24/7</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tim Kami -->
+            <h3 class="text-center mb-4">Tim Kami</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="image/profile.webp" alt="CEO">
+                        <h5>John Doe</h5>
+                        <p class="text-muted">CEO & Founder</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="image/profile.webp" alt="Manager">
+                        <h5>Jane Smith</h5>
+                        <p class="text-muted">Product Manager</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="image/profile.webp" alt="Designer">
+                        <h5>Mike Johnson</h5>
+                        <p class="text-muted">Lead Designer</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container my-5" id="contact">
+        <h2 class="text-center mb-4">Hubungi Kami</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>ShoeStore</h5>
+                    <p>Toko sepatu terpercaya dengan koleksi terlengkap dan kualitas terbaik</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#products" class="text-white">Produk</a></li>
+                        <li><a href="#about" class="text-white">Tentang</a></li>
+                        <li><a href="#contact" class="text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Kontak</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Jl. Example No. 123</li>
+                        <li><i class="fas fa-phone me-2"></i> (021) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@shoestore.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p>&copy; 2024 ShoeStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Keranjang Belanja</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems"></div>
+                    <div class="text-end mt-3">
+                        <h5>Total: Rp. <span id="cartTotal">0</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary" id="checkoutButton">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="config/index.js"></script>
+</body>
+</html>
